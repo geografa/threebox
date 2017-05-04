@@ -67,7 +67,7 @@
         var symbols = threebox.addSymbolLayer({
             id:             "trucks",
             source:         source, // You can also specify a URL or relative path such as "data/points.geojson",
-            modelName:      "Tie-fighter",    // will look for an .obj and .mtl file with this name
+            modelName:      "fighter",    // will look for an .obj and .mtl file with this name
             modelDirectory: "models/",          // in this directory
             rotation:       { generator: feature => (new THREE.Euler(Math.PI / 2, -feature.properties['headingChange'] * 10  * Math.PI / 180, -feature.properties['heading'] * Math.PI / 180, "ZYX")) },
             scale: 0.5,
