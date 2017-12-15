@@ -29,10 +29,10 @@
     var map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/grafa/ciwgu2bi6008e2qoi2u5rc0af',
-      center: [2.3515535298583927,48.855273369996866],
-      zoom: 15.95,
+      center: [-77.0231916007405,38.89523761775155],
+      zoom: 15,
       pitch: 60,
-      heading: 41,
+      bearing: -113,
       maxZoom: 24
     });
 
@@ -58,7 +58,7 @@
                 },
                 geometry: {
                     type: "Point",
-                    coordinates: [randomRange(2.544416713320669, 2.37945556640624), randomRange(48.85742267794228,48.65742267794228), randomRange(0,2000)]
+                    coordinates: [randomRange(-77.03120428992797,-77.13), randomRange(38.89085159534841,38.56085159534841), randomRange(0,2000)]
                 }
             }
             source.features.push(newFeat);
